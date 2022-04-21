@@ -1,16 +1,14 @@
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      colors:{
-        'cyan': colors.cyan,
-        'teal':colors.teal
-      }
+      colors: {
+        cyan: colors.cyan,
+        teal: colors.teal,
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [require("@tailwindcss/aspect-ratio")],
+};

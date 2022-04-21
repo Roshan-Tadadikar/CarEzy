@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../images/Loginimage.jpg";
 import { IoCarSportOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 function Login() {
   const mystyle = {
@@ -106,10 +107,10 @@ function Login() {
               </div>
               <div className="flex justify-between">
                 <div class="text-right text-gray-400 hover:underline hover:text-gray-100">
-                  <a href="#"> create account Instead </a>
+                  <a href="#" class="no-underline"> <Link to="/Signup">create account Instead</Link> </a>
                 </div>
                 <div class="text-right text-gray-400 hover:underline hover:text-gray-100">
-                  <a href="#">Forgot your password?</a>
+                  <a href="#" class="no-underline">Forgot your password?</a>
                 </div>
               </div>
 

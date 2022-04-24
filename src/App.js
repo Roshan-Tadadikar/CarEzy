@@ -5,8 +5,6 @@ import Signup from "./Components/Signup";
 import Contact from "./Components/Contact";
 // import Home from "./Components/Home";
 import Hometwo from "./Components/Hometwo";
-
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -17,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Hometwo />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="/Signup" element={<Signup />} />
+          {/* <Route path="/Signup" element={<Signup />} /> */}
           <Route path="/Contact" element={<Contact />} />
         </Routes>
       </Router>

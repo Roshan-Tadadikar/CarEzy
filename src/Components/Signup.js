@@ -3,7 +3,7 @@ import image from "../images/carred.jpg";
 import { IoCarSportOutline } from "react-icons/io5";
 import { FaFacebookF, FaGooglePlusG, FaLinkedinIn } from "react-icons/fa";
 import { TiSocialLinkedin, TiSocialGooglePlusCircular } from "react-icons/ti";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 function Signup() {
   const mystyle = {
     fontFamily: "Product Sans",
@@ -124,10 +124,14 @@ function Signup() {
               </div>
               <div className="flex justify-between">
                 <div class="text-right text-gray-400 hover:underline hover:text-gray-100">
-                  <a href="#" class="no-underline"><Link to="/Login"> Login Instead</Link> </a>
+                  <a href="#" class="no-underline">
+                    {/* <Link to="/Login"> Login Instead</Link>{" "} */}
+                  </a>
                 </div>
                 <div class="text-right text-gray-400 hover:underline hover:text-gray-100">
-                  <a href="#" class="no-underline">Forgot your password?</a>
+                  <a href="#" class="no-underline">
+                    Forgot your password?
+                  </a>
                 </div>
               </div>
 

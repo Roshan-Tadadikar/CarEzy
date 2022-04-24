@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import Msignup from "./Msignup";
 export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+
+  const [modalOn, setModalOn] = useState(false);
+  const [choice, setChoice] = useState(false);
+
+  const clicked = () => {
+    setModalOn(true);
+  };
+
   return (
     <>
       <nav className=" relative flex flex-wrap items-center justify-between px-2 py-3 bg-gray-900 z-10   ">
@@ -54,9 +63,15 @@ export default function Navbar({ fixed }) {
               <ul className="flex flex-col w-full lg:w-max lg:flex-row list-none lg:ml-auto">
                 <li className="nav-item  px-2  ">
                   <div class="flex  ">
-                    <button class="uppercase   w-full px-3 py-2 rounded-2xl  bg-indigo-300 hover:bg-indigo-600 focus:outline-none transform hover:translate-y-1 transition-all  text-white  duration-500 opacity-75 ">
-                      signin
+                    <button
+                      class="uppercase   w-full px-3 py-2 rounded-2xl  bg-indigo-300 hover:bg-indigo-600 focus:outline-none transform hover:translate-y-1 transition-all  text-white  duration-500 opacity-75 "
+                      onClick={clicked}
+                    >
+                      Signup
                     </button>
+                    {modalOn && (
+                      <Msignup setModalOn={setModalOn} setChoice={setChoice} />
+                    )}
                   </div>
                 </li>
                 <li className="nav-item px-2  ">

@@ -5,20 +5,22 @@ import Signup from "./Components/Signup";
 import Contact from "./Components/Contact";
 // import Home from "./Components/Home";
 import Hometwo from "./Components/Hometwo";
+import Dashboard from "./Components/Admin/Dashboard";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      {/* <Nav /> */}
-      <Router>
+      {/* <Nav />  */}
+       <Router>
         <Routes>
           <Route path="/" element={<Hometwo />} />
-          <Route path="/Login" element={<Login />} />
-          {/* <Route path="/Signup" element={<Signup />} /> */}
-          <Route path="/Contact" element={<Contact />} />
-        </Routes>
+          <Route path="/Login" element={<Login />} /> 
+           <Route path="/Signup" element={<Signup />} /> 
+          <Route path="/Contact" element={<Contact />} /> 
+         </Routes>
       </Router>
+       {/* <Dashboard /> */}
     </div>
   );
 }

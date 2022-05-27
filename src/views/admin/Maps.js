@@ -2,7 +2,7 @@ import React from "react";
 
 // components
 
-import MapExample from "components/Maps/MapExample.js";
+import MapExample from "Components/Maps/MapExample.js";
 
 export default function Maps() {
   return (

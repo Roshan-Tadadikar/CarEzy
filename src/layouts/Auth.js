@@ -3,8 +3,8 @@ import { Switch, Route, Redirect } from "react-router-dom";
 
 // components
 
-import Navbar from "components/Navbars/AuthNavbar.js";
-import FooterSmall from "components/Footers/FooterSmall.js";
+import Navbar from "Components/Navbars/AuthNavbar.js";
+import FooterSmall from "Components/Footers/FooterSmall.js";
 
 // views
 

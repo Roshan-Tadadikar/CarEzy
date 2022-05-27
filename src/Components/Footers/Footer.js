@@ -43,7 +43,7 @@ export default function Footer() {
                 >
                   <i className="fab fa-facebook-square"></i>
                 </button>
-            
+
                 <button
                   className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
@@ -62,7 +62,7 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/presentation?ref=nr-footer"
+                        href="#"
                       >
                         About Us
                       </a>
@@ -70,7 +70,7 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://blog.creative-tim.com?ref=nr-footer"
+                        href="#"
                       >
                         Blog
                       </a>
@@ -78,17 +78,9 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.github.com/creativetimofficial?ref=nr-footer"
+                        href="https://www.github.com"
                       >
                         Github
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/bootstrap-themes/free?ref=nr-footer"
-                      >
-                        Free Products
                       </a>
                     </li>
                   </ul>
@@ -97,9 +89,7 @@ export default function Footer() {
             </div>
           </div>
           <hr className="my-6 border-blueGray-300" />
-          <div className="flex flex-wrap items-center md:justify-between justify-center">
-          
-          </div>
+          <div className="flex flex-wrap items-center md:justify-between justify-center"></div>
         </div>
       </footer>
     </>

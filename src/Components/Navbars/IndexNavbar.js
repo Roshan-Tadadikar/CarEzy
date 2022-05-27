@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 // components
 
-import IndexDropdown from "components/Dropdowns/IndexDropdown.js";
+import IndexDropdown from "Components/Dropdowns/IndexDropdown.js";
 
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -16,7 +16,7 @@ export default function Navbar(props) {
               to="/"
               className="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
             >
-              Notus React
+              CarEzy
             </Link>
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -33,17 +33,6 @@ export default function Navbar(props) {
             }
             id="example-navbar-warning"
           >
-            <ul className="flex flex-col lg:flex-row list-none mr-auto">
-              <li className="flex items-center">
-                <a
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="https://www.creative-tim.com/learning-lab/tailwind/react/overview/notus?ref=nr-index-navbar"
-                >
-                  <i className="text-blueGray-400 far fa-file-alt text-lg leading-lg mr-2" />{" "}
-                  Docs
-                </a>
-              </li>
-            </ul>
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="flex items-center">
                 <IndexDropdown />
@@ -51,7 +40,7 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Fnotus-react%2F%23%2F"
+                  href="https://www.facebook.com"
                   target="_blank"
                 >
                   <i className="text-blueGray-400 fab fa-facebook text-lg leading-lg " />
@@ -62,7 +51,7 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnotus-react%2F%23%2F&text=Start%20your%20development%20with%20a%20Free%20Tailwind%20CSS%20and%20React%20UI%20Kit%20and%20Admin.%20Let%20Notus%20React%20amaze%20you%20with%20its%20cool%20features%20and%20build%20tools%20and%20get%20your%20project%20to%20a%20whole%20new%20level.%20"
+                  href="https://twitter.com"
                   target="_blank"
                 >
                   <i className="text-blueGray-400 fab fa-twitter text-lg leading-lg " />
@@ -73,7 +62,7 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="https://github.com/creativetimofficial/notus-react?ref=nr-index-navbar"
+                  href="https://github.com"
                   target="_blank"
                 >
                   <i className="text-blueGray-400 fab fa-github text-lg leading-lg " />
@@ -86,7 +75,7 @@ export default function Navbar(props) {
                   className="bg-lightBlue-500 text-white active:bg-lightBlue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                   type="button"
                 >
-                  <i className="fas fa-arrow-alt-circle-down"></i> Download
+                  <i className="fas fa-arrow-alt-circle-down"></i> B
                 </button>
               </li>
             </ul>

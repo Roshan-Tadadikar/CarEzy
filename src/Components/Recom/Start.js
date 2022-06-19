@@ -28,8 +28,8 @@ export default class Start extends Component {
 
   render() {
     const { step } = this.state;
-    const { budget, info, brand } = this.state;
-    const values = { budget, info, brand };
+    const { budget, info1, brand } = this.state;
+    const values = { budget, info1, brand };
     switch (step) {
       case 1:
         return (

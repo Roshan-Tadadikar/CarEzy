@@ -13,6 +13,7 @@ module.exports = {
       "./src/*.html",
       "./public/**/*.js",
       "./public/*.js",
+      "./public/src/Components/Recom/*.js",
     ],
     options: {
       safelist: [],

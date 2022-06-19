@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import IndexNavbar from "Components/Navbars/IndexNavbar.js";
 import Footer from "Components/Footers/Footer.js";
 
-export default function Index() {
+export default function landing() {
   return (
     <>
       <IndexNavbar fixed />

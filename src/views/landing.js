@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CarRecom from "./CarRecom";
 
 // components
 
 import IndexNavbar from "Components/Navbars/IndexNavbar.js";
 import Footer from "Components/Footers/Footer.js";
 
-export default function landing() {
+export default function Landing() {
   return (
     <>
       <IndexNavbar fixed />
@@ -138,7 +139,10 @@ export default function landing() {
                   Select from a range of car options right here
                 </p>
 
-                <Link to="/" className="font-bold text-blueGray-700 mt-8">
+                <Link
+                  to="/CarRecom"
+                  className="font-bold text-blueGray-700 mt-8"
+                >
                   Get started
                 </Link>
               </div>

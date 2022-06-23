@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import Step1 from "./Step1";
 import Step2 from "./Step2";
+import Step3 from "./Step3";
+import Step4 from "./Step4";
 import Confirmation from "./Confirmation";
 import Success from "./Success";
 export default class Start extends Component {
   state = {
     step: 1,
-    budget: "",
-    info1: "",
-    brand: "",
+    price: "",
+    displacement: "",
+    fuel: "",
+    power: "",
   };
   // go back to previous step
   prevStep = () => {
@@ -28,8 +31,8 @@ export default class Start extends Component {
 
   render() {
     const { step } = this.state;
-    const { budget, info1, brand } = this.state;
-    const values = { budget, info1, brand };
+    const { price, displacement, fuel, power } = this.state;
+    const values = { price, displacement, fuel, power };
     switch (step) {
       case 1:
         return (
@@ -50,13 +53,31 @@ export default class Start extends Component {
         );
       case 3:
         return (
+          <Step3
+            prevStep={this.prevStep}
+            nextStep={this.nextStep}
+            handleChange={this.handleChange}
+            values={values}
+          />
+        );
+      case 4:
+        return (
+          <Step4
+            prevStep={this.prevStep}
+            nextStep={this.nextStep}
+            handleChange={this.handleChange}
+            values={values}
+          />
+        );
+      case 5:
+        return (
           <Confirmation
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             values={values}
           />
         );
-      case 4:
+      case 6:
         return <Success />;
       default:
       // do nothing

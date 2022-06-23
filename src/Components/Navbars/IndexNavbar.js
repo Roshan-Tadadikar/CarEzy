@@ -1,12 +1,17 @@
 /*eslint-disable*/
 import React from "react";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 // components
 
 import IndexDropdown from "Components/Dropdowns/IndexDropdown.js";
 
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+  let letsgo = useHistory();
+  const letsgo2 = () => {
+    letsgo.push("/CarRecom");
+  };
   return (
     <>
       <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow">
@@ -68,6 +73,14 @@ export default function Navbar(props) {
                   <i className="text-blueGray-400 fab fa-github text-lg leading-lg " />
                   <span className="lg:hidden inline-block ml-2">Github</span>
                 </a>
+              </li>
+              <li>
+                <button
+                  className="flex mx-auto text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
+                  onClick={letsgo2}
+                >
+                  Lets Go!
+                </button>
               </li>
             </ul>
           </div>

@@ -1,7 +1,7 @@
 import React from "react";
 const Confirmation = ({ prevStep, nextStep, values }) => {
   console.log(values);
-  const { budget, info1, brand } = values;
+  const { price, displacement, fuel, power } = values;
   const Continue = (e) => {
     e.preventDefault();
     nextStep();
